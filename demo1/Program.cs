@@ -6,9 +6,19 @@ namespace ConsoleApplication
     {
         public static void Main(string[] airgs)
         {
-
+            loop();
             Console.WriteLine("Hello World!");
         }
+        public static void loop()
+        {
+            for (int i = 0; i < 100; i++)
+            {
+                Console.Write("{0}", i);
+
+            }
+
+        }
+
 
     }
 
