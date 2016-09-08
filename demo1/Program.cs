@@ -13,7 +13,7 @@ namespace ConsoleApplication
         {
             for (int i = 0; i < 100; i++)
             {
-                Console.Write("{0}", i);
+                Console.WriteLine("{0}", i);
 
             }
 
