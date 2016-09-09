@@ -11,6 +11,7 @@ using Microsoft.Extensions.Logging;
 using WebApplication.Models;
 using WebApplication.Models.AccountViewModels;
 using WebApplication.Services;
+using Helpers;
 
 namespace WebApplication.Controllers
 {
@@ -22,7 +23,7 @@ namespace WebApplication.Controllers
         private readonly IEmailSender _emailSender;
         private readonly ISmsSender _smsSender;
         private readonly ILogger _logger;
-
+      
         public AccountController(
             UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-
+using Helpers;
 namespace WebApplication.Controllers
 {
     public class HomeController : Controller
@@ -16,7 +16,8 @@ namespace WebApplication.Controllers
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
-
+            SQLHelper helper = new SQLHelper();
+           int xxx= helper.Multi(3,4);
             return View();
         }
 
